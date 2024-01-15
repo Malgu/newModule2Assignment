@@ -4,17 +4,38 @@
   }
   h1 {
     margin-bottom: 15px;
+    text-align: center;
   }
+
+  h2 {
+    float: right;
+    width: 20%;
+    height: 10%;
+    border: 1px solid black;
+    margin: 0;
+    text-align: center;
+  }
+
+  .beef {
+    background-color: blueviolet;
+  }
+  .vegetables {
+    background-color: teal;
+  }
+  .drinks {
+    background-color: crimson;
+  }
+
   
   p {
     border: 3px solid black;
-    background-color: #A52A2A;
+    background-color: gray;
     width: 90%;
-    height: 150px;
     margin-right: auto;
     margin-left: auto;
     font-family: Helvetica;
     color: white;
+    float: left;
   }
   
   /* Simple Responsive Framework. */
@@ -26,7 +47,7 @@
   @media (min-width: 992px) {
     .col-desktop {
       float: left;
-      border: 3px solid green;
+      border: 3px solid black;
       width: calc(100%/3)
     }
   }
@@ -35,22 +56,22 @@
   @media (min-width: 768px) and (max-width: 991px) {
     .col-tablet-1, .col-tablet-2 {
       float: left;
-      border: 3px solid green;
+      border: 3px solid black;
     }
-    .col-tablet-1 {
-      width: 50%;
-    }
-    .col-tablet-2 {
-      width: 100%;
+        .col-tablet-1 {
+            width: 50%;
+        }
+        .col-tablet-2 {
+            width: 100%;
+        }
     }
 
-      /********** mobile devices only **********/
+        /********** mobile devices only **********/
     @media (max-width: 767px) {
         .col-mobile {
-          float: left;
-          border: 3px solid green;
-          border: 3px solid green;
+            float: middle;
+            border: 3px solid black;
         }
-      }
-  }
+    }
+  
   
