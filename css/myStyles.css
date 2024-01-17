@@ -1,6 +1,9 @@
 /********** Base styles **********/
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
   }
   h1 {
     margin-bottom: 15px;
@@ -9,15 +12,16 @@
 
   h2 {
     float: right;
-    width: 20%;
-    height: 10%;
+    width: 120px;
+    height: 30px;
     border: 1px solid black;
     margin: 0;
     text-align: center;
+    clear: left;
   }
 
   .beef {
-    background-color: blueviolet;
+    background-color: plum;
   }
   .chicken {
     background-color: teal;
@@ -27,53 +31,53 @@
   }
 
   section {
-    background-color: gray;
-    margin: 30px;
+    background-color: blue;
+    border: 3px solid black;
+    margin: 10px;
+    float: left;
   }
 
   p {
-    background-color: gray;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+     width: 100%;
     font-family: Helvetica;
     color: white;
+    background-color: blueviolet;
     float: left;
+    border: 2px solid black;
+    padding: 5px;
+    margin: auto;
   }
   
   /* Simple Responsive Framework. */
   .row {
     width: 100%;
+    background-color: goldenrod;
   }
   
   /********** desktop devices only **********/
   @media (min-width: 992px) {
     .col-desktop {
-      float: left;
-      border: 3px solid black;
-      width: calc(100%/3)
+      width: 30%
     }
   }
   
   /********** tablet devices only **********/
   @media (min-width: 768px) and (max-width: 991px) {
     .col-tablet-1, .col-tablet-2 {
-      float: left;
-      border: 3px solid black;
     }
         .col-tablet-1 {
-            width: 50%;
+            width: 45%;
         }
         .col-tablet-2 {
-            width: 100%;
+            width: 92.5%;
         }
     }
 
         /********** mobile devices only **********/
     @media (max-width: 767px) {
         .col-mobile {
-            float: middle;
-            border: 3px solid black;
+          width: 90%;
+          height: 30%;
         }
     }
   
